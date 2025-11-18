@@ -1,0 +1,218 @@
+body {
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  background: #A7C3CC;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#header_conteudo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#input-busca {
+  width: 20%;
+  display: flex;
+  align-self: center;
+  justify-self: flex-start;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+
+}
+
+#logo {
+  width: 60%;
+  height: 120px;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  font-size: 1.1em;
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.projetos {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.projetos_colaborativos {
+  width: 100%;
+  margin-top: 30px;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.projetos img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: rgb(255, 247, 199);
+  transition: ease-in-out 0.1s;
+}
+
+.projetos img:hover {
+  transform: translateX(-5px);
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.245);
+}
+
+
+.projetos_colaborativos img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: rgb(187, 209, 188);
+  transition: ease-in-out 0.1s;
+}
+
+.projetos_colaborativos img:hover {
+  transform: translateX(-5px);
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.245);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.guia_primeiro_socorros {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.guia_primeiro_socorros h2 {
+  text-align: center;
+  width: 45%;
+  white-space: wrap;
+}
+
+.guia_primeiro_socorros button {
+  width: 400px;
+  height: 50px;
+  cursor: pointer;
+  font-size: larger;
+  color: #ffff;
+  border: none;
+  border-radius: 5px;
+  background-color: #253C55;
+  transition: ease-in-out 0.1s;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.245);
+}
+
+/*Footer*/
+
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+  background-color: #A7C3CC;
+}
+
+.upper_footer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.icone {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lower_footer {
+  width: 70%;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#sobre_nos {
+  width: 45%;
+}
+
+p {
+  white-space: wrap;
+}
+
+.contato {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.lista_estudantes {
+  display: flex;
+  flex-direction: column;
+}
