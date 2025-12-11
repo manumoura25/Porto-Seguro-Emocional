@@ -41,6 +41,7 @@ header {
   justify-content: center;
 }
 
+
 nav {
   width: 100%;
   font-size: 1.1em;
@@ -56,7 +57,7 @@ ul {
   gap: 20px;
 }
 
-.container {
+#container {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -65,6 +66,24 @@ ul {
   gap: 30px;
   margin-bottom: 30px;
 }
+
+/* BANNER */
+.banner-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+}
+
+.img-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FIM BANNER */
+
 
 .justified {
   text-align: justify;
@@ -94,7 +113,7 @@ ul {
   object-fit: cover;
   border-radius: 10px;
   background-color: rgb(255, 247, 199);
-  transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.2s;
 }
 
 .projetos img:hover {
@@ -108,7 +127,7 @@ ul {
   object-fit: contain;
   border-radius: 10px;
   background-color: rgb(187, 209, 188);
-  transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.2s;
 }
 
 .projetos_colaborativos img:hover {
@@ -133,7 +152,6 @@ img {
 
 .guia_primeiro_socorros {
   width: 100%;
-  margin-top: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -157,7 +175,7 @@ img {
   transition: ease-in-out 0.1s;
 }
 
-button:hover {
+.guia_primeiro_socorros button:hover {
   transform: translateY(-5px);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.245);
 }
@@ -182,13 +200,13 @@ footer {
   margin-bottom: 30px;
 }
 
-.icone {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.icone img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 0;
 }
+
 
 .lower_footer {
   width: 70%;
@@ -216,3 +234,4 @@ p {
   display: flex;
   flex-direction: column;
 }
+

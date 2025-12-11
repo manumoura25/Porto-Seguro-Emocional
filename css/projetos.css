@@ -1,9 +1,10 @@
+
 body {
   width: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.2em;
   margin: 0;
   padding: 0;
+  font-family: 'Gill Sans', Calibri, sans-serif;
+  font-size: 1.2em;
 }
 
 header {
@@ -11,183 +12,157 @@ header {
   display: flex;
   align-items: center;
   background: #A7C3CC;
-  color: white;
-  text-align: center;
   padding: 20px;
 }
 
 #header_conteudo {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #input-busca {
   width: 20%;
-  display: flex;
-  align-self: center;
-  justify-self: flex-start;
+  padding: 7px;
   border: none;
   border-radius: 5px;
-  padding: 7px;
 }
 
-#logo {
-  width: 60%;
+#logo img {
   height: 120px;
-  display: flex;
-  justify-self: center;
-  justify-content: center;
 }
 
-nav {
-  width: 100%;
-  margin-top: 30px;
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-ul {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.banner {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  background-color: #faf75d;
-}
-
-.banner img {
-  width: 100%;
-  object-fit: fill;
-}
-
-.container {
-  width: 100%;
+/* CONTAINER PRINCIPAL ONDE O JS INSERE O PROJETO */
+#container {
+  width: 70%;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  justify-items: center;
   gap: 30px;
-  margin-bottom: 30px;
 }
 
-.justified {
-  text-align: justify;
+/* CARROSSEL */
+.container-slide {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
 }
 
+.carrossel-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform .5s ease-in-out;
+}
+
+.container_img .img-slides {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* BOTÕES DO SLIDER */
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 22px;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* IMAGENS DO PROCESSO */
 .container_imgs {
-  width: 175%;
-  height: 300px;
-  display: inline-block;
-  justify-content: space-evenly;
-   gap: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#img_processo_projeto {
-  width: 20%;
-  height: 100%;
-  border-radius: 20px;
-  background-color: #eeddf8;
-  gap: 20px;
+.img_processo_projeto {
+  width: 22%;
+  border-radius: 15px;
 }
-#img_apoiar_se{
-  width: 20%;
-  height: 100%;
-  border-radius: 20px;
-  background-color: #9af3d5;
-}
-#img_educa {
-  width: 20%;
-  height: 100%;
-  border-radius: 20px;
-  background-color: #ffafff;
-}
+
+/* SEPARADOR */
 #line {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: #000;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+/* IMAGENS FINAL */
+.container_img {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .img_projeto {
   width: 45%;
-  height: 100%;
   border-radius: 10px;
-  background-color: #253C55;
 }
 
+/* TEXTOS DESCRITIVOS */
 .descricao {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 150px;
-}
-
-
-/*Footer*/
-
-footer {
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 0px;
-  background-color: #A7C3CC;
+  gap: 20px;
+}
+
+.justified {
+  text-align: justify;
+  white-space: normal;
+}
+
+/* FOOTER */
+footer {
+  background: #A7C3CC;
+  padding: 20px;
 }
 
 .upper_footer {
-  width: 100%;
-  height: 20%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
-  margin-bottom: 30px;
   gap: 20px;
 }
 
-.icones {
-  width: 100%;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.icone {
+  width: 50px;
+  height: 50px;
 }
 
 .lower_footer {
-  width: 70%;
   display: flex;
-  align-self: center;
   justify-content: space-between;
+  width: 80%;
+  margin: auto;
   gap: 20px;
 }
 
-#sobre_nos {
-  width: 45%;
-}
-
-p {
-  white-space: wrap;
-}
-
-.contato {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
+.sobre_nos,
 .lista_estudantes {
-  display: flex;
-  flex-direction: column;
+  width: 45%;
 }
